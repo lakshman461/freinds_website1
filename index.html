@@ -1,35 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>dosthulu</title>
+  <title>My Animated Friends Site</title>
   <style>
-    body { font-family: Arial; background-color: #f0f0f0; padding: 20px; }
-    .card {
-      background: white; padding: 50px; margin: 50px auto;
-      border-radius: 40px; max-width: 500px;
-      box-shadow: 0 0 10px #ccc; text-align: center;
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffe6f0, #e6f7ff);
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
     }
+
+    h1 {
+      text-align: center;
+      color: #e91e63;
+      font-size: 40px;
+      margin-top: 30px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: slideUp 1.5s ease;
+    }
+
     .photo {
-      width: 300px; height: 350px;
-      border-radius: 80%; object-fit: cover;
+      width: 250px;
+       height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.4s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .flower {
+      position: absolute;
+      top: -50px;
+      animation: fall 10s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes fall {
+      0% {
+        top: -50px;
+        left: 10%;
+        transform: rotate(0deg);
+      }
+      100% {
+        top: 110%;
+        left: 80%;
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
+
 <body>
-  <h1 style="text-align:center;">yedhavalu</h1>
+<img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" width="40" class="flower" style="left:20%">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" width="50" class="flower" style="left:50%">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" width="30" class="flower" style="left:70%">
+
+  <h1>My Lovely Friends 💕</h1>
 
   <div class="card">
-    <img src="friend1.jpg" alt="Friend 1" class="photo" />
-    <h2>amara babu</h2>
-    <p><b>Bio:</b> NENE RAJU NENE MANTHRI.</p>
-    <p><</i>"nee kosam nuvvu brathuku!"</i></p>
+    <img src="friend1.jpg" class="photo" />
+    <h2>Amar</h2>
+    <p>Bio: Nene raju nene mantri!</p>
   </div>
 
   <div class="card">
-    <img src="friend2.jpg" alt="Friend 2" class="photo" />
-    <h2>lakshman</h2>
-    <p><b>Bio:</b> ANTHA NAA ISTAM.</p>
-    <p><</i>"ninnu nuvvu nammi mundhuku sagu!"</i></p>
+    <img src="friend2.jpg" class="photo" />
+    <h2>Lakshman</h2>
+    <p>Bio: Anthaa naa ishtam!</p>
   </div>
 </body>
 </html>
