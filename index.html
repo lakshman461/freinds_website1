@@ -16,11 +16,11 @@
       color: #3333ff;
       font-size: 60px;
       margin-top: 30px;
-      animation: fadeIn 5s ease-in;
+      animation: fadeIn 2s ease-in;
     }
 
     .card {
-      background: linear-gradient(to bottom,#ffccff,#ccffff);
+      background: linear-gradient(to bottom, #ffccff, #ccffff);
       width: 320px;
       margin: 30px auto;
       padding: 25px;
@@ -31,26 +31,24 @@
     }
 
     .photo {
-      width: 500px;
-       height: 500px;
+      width: 250px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 60%;
-      box shadow:0 0 20px rgba(255,105,180,0.4);
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
       transition: transform 0.4s ease;
     }
 
     .photo:hover {
       transform: scale(1.05) rotate(2deg);
-    
-
-.star {
-  position: absolute;
-  top: -60px;
-  animation: fall 6s linear infinite;
-  opacity: 0.9;
-  filter: drop-shadow(0 0 5px #ff6600); /* Neon glow */
-}
-  
+    }
+  .star {
+      position: absolute;
+      top: -60px;
+      animation: fall 6s linear infinite;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 5px #ff6600);
+    }
 
     @keyframes fall {
       0% {
@@ -62,27 +60,28 @@
         transform: rotate(360deg);
       }
     }
-     @keyframes fadeIn {
-      from { opacity: 1; transform: translateY(-20px); }
-      to { opacity: 0; transform: translateY(0); }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes slideUp {
-      from { opacity: 4; transform: translateY(50px); }
+      from { opacity: 0; transform: translateY(50px); }
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
-<!-- Neon Glowing Stars -->
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="30" class="star" style="left:10%; animation-delay: 0s;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="25" class="star" style="left:20%; animation-delay: 0.5s;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="35" class="star" style="left:30%; animation-delay: 1s;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="40" class="star" style="left:50%; animation-delay: 1.5s;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="20" class="star" style="left:60%; animation-delay: 2s;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="30" class="star" style="left:75%; animation-delay: 2.5s;">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="25" class="star" style="left:85%; animation-delay: 3s;">
+  <!-- Falling Neon Stars -->
+  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="star" style="left:10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="star" style="left:25%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="star" style="left:40%; animation-delay: 2s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="star" style="left:55%; animation-delay: 3s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="star" style="left:70%; animation-delay: 4s;">
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="star" style="left:85%; animation-delay: 5s;">
+
   <h1>My Lovely Friends 💕</h1>
 
   <div class="card">
