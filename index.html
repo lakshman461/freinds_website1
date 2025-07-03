@@ -6,28 +6,28 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #ffe6f0, #e6f7ff);
-      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00ffcc, #ff6600);
+      font-family: 'Poppins', sans-serif;
       overflow-x: hidden;
     }
 
     h1 {
       text-align: center;
-      color: #e91e63;
+      color: #3333ff;
       font-size: 60px;
       margin-top: 30px;
       animation: fadeIn 5s ease-in;
     }
 
     .card {
-      background: lite red;
-      width: 280px;
+      background: linear-gradient(to bottom,#ffccff,#ccffff);
+      width: 320px;
       margin: 30px auto;
-      padding: 20px;
-      border-radius: 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       text-align: center;
-      animation: slideUp 1.5s ease;
+      animation: slideUp 1s ease;
     }
 
     .photo {
@@ -35,7 +35,8 @@
        height: 500px;
       object-fit: cover;
       border-radius: 60%;
-      transition: transform 0.4s;
+      box shadow:0 0 20px rgba(255,105,180,0.4);
+      transition: transform 0.4s ease;
     }
 
     .photo:hover {
@@ -44,10 +45,12 @@
 
     .star {
   position: absolute;
-  top: -60px;
+  top: 60px;
+  left:200px
+  right:100px
   animation: fall 4s linear infinite;
   opacity: 0.9;
-  filter: drop-shadow(0 0 5px #00ffff); /* Neon glow */
+  filter: drop-shadow(0 0 5px #ff6600); /* Neon glow */
 }
     }
 
@@ -82,7 +85,7 @@
     }
 
     @keyframes slideUp {
-      from { opacity: 0; transform: translateY(50px); }
+      from { opacity: 4; transform: translateY(50px); }
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
